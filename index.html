@@ -1,1 +1,41 @@
-<h1>Hello chị 😎</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web của chị</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, purple, black);
+            color: white;
+            text-align: center;
+            font-family: Arial;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background: red;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chào mừng đến web của chị 😎</h1>
+
+    <p id="text">Chưa có gì xảy ra</p>
+
+    <button onclick="changeText()">Bấm thử</button>
+
+    <p id="time"></p>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML = "Web bắt đầu xịn rồi 😏";
+        }
+
+        setInterval(() => {
+            document.getElementById("time").innerHTML = new Date().toLocaleTimeString();
+        }, 1000);
+    </script>
+</body>
+</html>
