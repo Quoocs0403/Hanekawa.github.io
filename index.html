@@ -6,78 +6,19 @@
 
 <body style="
     background-image: url('abc.jpg');
-    background-size: contain;
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
-    color: white;
-    text-align: center;
+    color: black;
 ">
 
-    <h1>MONOGATARI</h1>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>MONOGATARI</title>
-    <style>
-        body {
-            background: black;
-            color: white;
-            text-align: center;
-            font-family: Arial;
-        }
-        button {
-            margin: 10px;
-            padding: 10px 20px;
-            background: purple;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:hover {
-            background: red;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1 id="story">Chị đang đứng trước 4 con đường...</h1>
-
-    <div id="choices">
-        <button onclick="chon(1)">Đi đường 1</button>
-        <button onclick="chon(2)">Đi đường 2</button>
-        <button onclick="chon(3)">Đi đường 3</button>
-        <button onclick="chon(4)">Đi đường 4</button>
-    </div>
-
-    <script>
-        function chon(x) {
-            let story = document.getElementById("story");
-            let choices = document.getElementById("choices");
-
-            if (x == 1) {
-                story.innerHTML = "Chị gặp kho báu 💰";
-            }
-            else if (x == 2) {
-                story.innerHTML = "Chị bị quái đánh 💀";
-            }
-            else if (x == 3) {
-                story.innerHTML = "Chị tìm thấy người yêu 😳";
-            }
-            else {
-                story.innerHTML = "Chị đi lạc luôn 🤡";
-            }
-
-            choices.innerHTML = '<button onclick="reset()">Chơi lại</button>';
-        }
-
-        function reset() {
-            location.reload();
-        }
-    </script>
+    <h1 style="
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    ">
+        MONOGATARI
+    </h1>
 
 </body>
 </html>
