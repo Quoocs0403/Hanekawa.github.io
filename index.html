@@ -23,10 +23,15 @@
 
 </body>
 </html>
-<audio id="bgm" autoplay loop muted>
+<<body onclick="startMusic()">
+
+<audio id="bgm" loop>
     <source src="monogatari_sound_effect.m4a">
 </audio>
 
 <script>
-document.getElementById("bgm").muted = false;
+function startMusic() {
+    let audio = document.getElementById("bgm");
+    audio.play();
+}
 </script>
